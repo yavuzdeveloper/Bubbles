@@ -1,16 +1,16 @@
-function baloncuklar(){
+function bubbles(){
   const  container = document.querySelector(".container"); 
-  const baloncuk = document.createElement("span");
-  const boyut = Math.random() * 100;
+  const bubble = document.createElement("span");
+  const size = Math.random() * 100;
 
-  baloncuk.style.width = boyut + "px";
-  baloncuk.style.height = boyut + "px";
-  baloncuk.style.left = Math.random() * innerWidth + "px";
+  bubble.style.width = size + "px";
+  bubble.style.height = size + "px";
+  bubble.style.left = Math.random() * innerWidth + "px";
 
-  container.appendChild(baloncuk);
+  container.appendChild(bubble);
   setTimeout (() => {
-    baloncuk.remove();
+    bubble.remove();
   }, 2000); 
 }
 
-setInterval(baloncuklar, 50); 
+setInterval(bubbles, 50); 
